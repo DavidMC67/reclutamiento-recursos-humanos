@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="320.0" prefWidth="360.0" spacing="10.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.recursos.humanos.controller.LoginController">
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Recursos Humanos" />
+      <Label text="Iniciar sesión" />
+      <Label text="Correo" />
+      <TextField fx:id="txtCorreo" prefHeight="30.0" prefWidth="300.0" />
+      <Label text="Contraseña" />
+      <PasswordField fx:id="txtContrasena" prefHeight="30.0" prefWidth="300.0" />
+      <Pane prefHeight="37.0" prefWidth="300.0">
+         <children>
+            <Button layoutX="178.0" layoutY="6.0" mnemonicParsing="false" onAction="#irRegistro" text="Registrarse" />
+            <Button layoutX="53.0" layoutY="6.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="25.0" prefWidth="74.0" text="Ingresar" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
